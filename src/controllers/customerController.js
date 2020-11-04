@@ -13,6 +13,11 @@ controller.list = (req, res) => {
   });
 };
 
+controller.new = (req, res) => {
+  console.log(res);
+  res.render('customers_new');
+};
+
 controller.save = (req, res) => {
   const data = req.body;
   console.log(req.body)
